@@ -25,8 +25,12 @@ def localProps = file("local.properties")
 if (!localProps.exists()) {
     def sdkDir = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
     if (!sdkDir) {
-        def defaultSdk = new File(System.getProperty("user.home"), "Android/Sdk")
-        if (defaultSdk.exists()) sdkDir = defaultSdk.absolutePath
+        def candidates = [
+            new File(System.getProperty("user.home"), "Android/Sdk"),
+            new File(System.getProperty("user.home"), "AppData/Local/Android/Sdk"),
+            new File("C:/Users/${System.getProperty('user.name')}/AppData/Local/Android/Sdk")
+        ]
+        for (c in candidates) { if (c.exists()) { sdkDir = c.absolutePath; break } }
     }
     if (sdkDir) {
         localProps.text = "sdk.dir=" + sdkDir.replace("\\", "\\\\")
