@@ -11,10 +11,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.adntd.miniproyecto03.ui.screens.FormularioScreen
-import com.adntd.miniproyecto03.ui.screens.ListaScreen
 import com.adntd.miniproyecto03.ui.theme.MiniProyecto03Theme
-import com.adntd.miniproyecto03.ui.viewmodel.PublicacionViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

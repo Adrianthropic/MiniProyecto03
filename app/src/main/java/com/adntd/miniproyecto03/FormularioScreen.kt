@@ -1,4 +1,4 @@
-package com.adntd.miniproyecto03.ui.screens
+package com.adntd.miniproyecto03
 
 import android.content.Context
 import android.content.pm.PackageManager
@@ -47,7 +47,6 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import coil.compose.AsyncImage
-import com.adntd.miniproyecto03.ui.viewmodel.PublicacionViewModel
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date

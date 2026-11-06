@@ -1,4 +1,4 @@
-package com.adntd.miniproyecto03.data.local
+package com.adntd.miniproyecto03
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

@@ -1,4 +1,4 @@
-package com.adntd.miniproyecto03.ui.screens
+package com.adntd.miniproyecto03
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -31,8 +31,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.adntd.miniproyecto03.data.local.Publicacion
-import com.adntd.miniproyecto03.ui.viewmodel.PublicacionViewModel
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

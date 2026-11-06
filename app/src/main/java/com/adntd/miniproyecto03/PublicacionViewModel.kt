@@ -1,11 +1,8 @@
-package com.adntd.miniproyecto03.ui.viewmodel
+package com.adntd.miniproyecto03
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.adntd.miniproyecto03.data.local.DatabaseProvider
-import com.adntd.miniproyecto03.data.local.Publicacion
-import com.adntd.miniproyecto03.data.repository.PublicacionRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

@@ -1,7 +1,5 @@
-package com.adntd.miniproyecto03.data.repository
+package com.adntd.miniproyecto03
 
-import com.adntd.miniproyecto03.data.local.Publicacion
-import com.adntd.miniproyecto03.data.local.PublicacionDao
 import kotlinx.coroutines.flow.Flow
 
 class PublicacionRepository(private val dao: PublicacionDao) {

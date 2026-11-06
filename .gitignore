@@ -11,7 +11,7 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 .DS_Store
-/build
+build/
 /captures
 .externalNativeBuild
 .cxx
@@ -23,4 +23,4 @@ local.properties
 bin/
 gen/
 out/
-release/
+release/gradle/gradle-daemon-jvm.properties
