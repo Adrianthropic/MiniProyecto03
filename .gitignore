@@ -1,4 +1,7 @@
 *.iml
+.commandcode/
+.kotlin/
+.idea/
 .gradle
 /local.properties
 /.idea/caches
