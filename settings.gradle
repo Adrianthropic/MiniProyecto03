@@ -20,5 +20,18 @@ dependencyResolutionManagement {
     }
 }
 
+// Auto-detect Android SDK location when local.properties is missing (e.g. after clone)
+def localProps = file("local.properties")
+if (!localProps.exists()) {
+    def sdkDir = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
+    if (!sdkDir) {
+        def defaultSdk = new File(System.getProperty("user.home"), "Android/Sdk")
+        if (defaultSdk.exists()) sdkDir = defaultSdk.absolutePath
+    }
+    if (sdkDir) {
+        localProps.text = "sdk.dir=" + sdkDir.replace("\\", "\\\\")
+    }
+}
+
 rootProject.name = "MiniProyecto03"
 include(":app")
